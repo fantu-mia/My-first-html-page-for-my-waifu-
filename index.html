@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Fantu for his waifuu</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Will You Love me Forever bubiiiiiii?</h1>
+        <h1 class="header_text">Can i have hugs and food all time hehehe?</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://media.giphy.com/media/wZ2SI2e3t1gR2/giphy.gif?cid=ecf05e47heu9xglnk7n89gqnipuzoc9c4d6tfx3kbzn4v8to&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+          alt="Cutu Hammyyy"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No
+        </button>
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+          function moveButton() {
+            var x =
+              Math.random() *
+                (window.innerWidth -
+                  document.getElementById("noButton").offsetWidth) -
+              85;
+            var y =
+              Math.random() *
+                (window.innerHeight -
+                  document.getElementById("noButton").offsetHeight) -
+              48;
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
